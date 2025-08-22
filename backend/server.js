@@ -8,7 +8,8 @@ dotenv.config();
 connectDB();
 
 const app = express();
-app.use(cors({ origin: process.env.ALLOWED_ORIGIN || "*" }));
+// app.use(cors({ origin: process.env.ALLOWED_ORIGIN || "*" }));
+app.use(cors());
 app.use(express.json());
 
 
